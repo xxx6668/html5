@@ -6,9 +6,6 @@
       transitionTimingFunction:'steps(28)'
     });
   },200);
-    $('.text').css({
-        display: 'none'
-    });
   setTimeout(function(){
     $('.text').css({
       display: 'none'
