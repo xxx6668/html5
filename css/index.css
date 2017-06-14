@@ -1,59 +1,160 @@
 /*主体部分 */
 
 .container {
-  width: 100%;
-  height: 100%;
-  display: none;
+    width: 100%;
+    height: 100%;
+    /*display: none;*/
 }
 
 img {
-  vertical-align: middle;
+    vertical-align: middle;
 }
-
 
 /*头部 */
 
 .top {
-  position: relative;
+    position: relative;
 }
 
 .top,
 .top-bg {
-  width: 100%;
+    width: 100%;
 }
 
 .top span {
-  position: absolute;
-  bottom: 30px;
-  right: 115px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 700;
+    position: absolute;
+    bottom: 30px;
+    right: 115px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .my-icon {
-  display: inline-block;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  position: absolute;
-  bottom: 0;
-  right: 3%;
-  background-color: #fff;
-  padding: 3px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    background-color: #fff;
+    padding: 3px;
 }
 
 .my-icon img {
-  width: 75px;
+    width: 75px;
 }
-
 
 /*列表*/
 
 .list {
-  margin: 50px 0;
+    margin: 50px 0;
 }
 
 .list li {
-  padding: 50px 25px;
-  border-bottom: 1px solid #f3f1f2;
+    padding: 50px 25px;
+    border-bottom: 1px solid #f3f1f2;
+}
+
+.item {
+    position: relative;
+    padding-left: 105px;
+    width: 100%;
+}
+
+.item .item_img {
+    width: 84px;
+    height: 84px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.item .name {
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #576b95;
+}
+
+.item .text {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.item .pic {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.item .pic img {
+    width: 100%;
+}
+
+.item-footer {
+    position: relative;
+}
+
+.item-footer .common-btn {
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+}
+.common-box.open{
+    width: 168px;
+}
+.common-box {
+    width: 0;
+    position: absolute;
+    right: 50px;
+    bottom: -40px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    overflow: hidden;
+}
+.common-box .icon_like{
+    position: absolute;
+    right: 90px;
+    bottom: 30px;
+   -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.click{
+    animation: animations 2s ease-out;
+}
+@keyframes animations {
+    0%{
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    50%{
+        -webkit-transform: scale(2);
+        transform: scale(2);
+    }
+    100%{
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+.common{
+    background-color: #f3f1f2;
+    position: relative;
+    margin-top: 30px;
+}
+.arrow{
+    top:-12px;
+    left: 20px;
+    position: absolute;
+}
+.like{
+    padding: 10px 25px;
+    border-bottom: 1px solid #e0e0e2;
+    color: #576b95;
+}
+.like span{
+    color: black;
+}
+.message{
+    padding:4px 25px;
 }

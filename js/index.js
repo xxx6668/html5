@@ -6,6 +6,9 @@
       transitionTimingFunction:'steps(28)'
     });
   },200);
+    $('.text').css({
+        display: 'none'
+    });
   setTimeout(function(){
     $('.text').css({
       display: 'none'
@@ -14,4 +17,13 @@
       display: 'block'
     })
   },5000);
+  $(".common-btn").click(function () {
+      $(".common-box").toggleClass("open");
+  })
+    $(".common-box").click(function () {
+        $(".icon_like").addClass('click');
+        setTimeout(function () {
+            $(".icon_like").removeClass('click');
+        },2000)
+    })
 })(window)
